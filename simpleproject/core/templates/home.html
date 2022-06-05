@@ -1,0 +1,92 @@
+{% extends 'nav.html' %}
+<!DOCTYPE html> {% load static %} {% block content %}
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- WELCOME -->
+    <section id="welcome-section" style="background-color: 0;color: aqua;">
+
+        <h1 style="background-color: 0;color: aqua;">BackEnd Developer</h1>
+
+        <a id="link-to-contact" href="{% url 'Contact' %}">Contact me</a>
+
+        <a id="link-to-projects" href="#projects"><i class="fas fa-chevron-down"></i></a>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" style="background-color: black;color: aqua;">
+
+        <h2 style="background-color: 0;color: aqua;"><b>My projects:</b></h2>
+        <hr>
+
+        <div id="projects-gallery">
+
+            <div class="project-tile">
+                <a href="https://codepen.io/marsud/full/mdPzrOy" target="_blank">
+                    <img class="webpage-img" src="https://i.postimg.cc/fT3CVj6P/page4.png" alt="webpage screen">
+                </a>
+                <p class="project-caption">Documentation Page</p>
+            </div>
+
+            <div class="project-tile">
+                <a href="https://codepen.io/marsud/full/YzqvdvV" target="_blank">
+                    <img class="webpage-img" src="https://i.postimg.cc/xjpgjFFH/page3.png" alt="webpage screen">
+                </a>
+                <p class="project-caption">Landing Page</p>
+            </div>
+
+            <div class="project-tile">
+                <a href="https://codepen.io/marsud/full/poyVZGO" target="_blank">
+                    <img class="webpage-img" src="https://i.postimg.cc/02LfDKvy/page2.png" alt="webpage screen">
+                </a>
+                <p class="project-caption">User Form</p>
+            </div>
+
+            <div class="project-tile">
+                <a>
+                    <div class=placeholder-img>
+                        <p>Coming soon</p>
+                    </div>
+                </a>
+                <p class="project-caption">Other</p>
+            </div>
+
+            <div class="project-tile">
+                <a>
+                    <div class=placeholder-img>
+                        <p>Coming soon</p>
+                    </div>
+                </a>
+                <p class="project-caption">Other</p>
+            </div>
+
+            <div class="project-tile">
+                <a>
+                    <div class=placeholder-img>
+                        <p>Coming soon</p>
+                    </div>
+                </a>
+                <p class="project-caption">Other</p>
+            </div>
+
+        </div>
+
+        <a href="#" id="more-button">Show more<i class="fas fa-chevron-right"></i></a>
+
+    </section>
+
+</body>
+
+</html>
+
+{% endblock content %}
